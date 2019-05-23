@@ -8,7 +8,7 @@
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/night.css">
+		<link rel="stylesheet" href="css/theme/solarized.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
@@ -21,15 +21,93 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+		<style>
+			#left {
+				left:-8.33%;
+				text-align: left;
+				float: left;
+				width:40%;
+				margin-right:20px;
+				z-index:-10;
+			}
+
+			#right {
+				left:31.25%;
+				top: 75px;
+				float: right;
+				z-index:-10;
+				width:55%;
+			}
+			ul > li {
+				font-size:.9em;
+			}
+			ul > ul > li {
+				font-size:.8em;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>David Merk BIO</section>
-				<section></section>
-				<section>Slide 1</section>
-				<section>Slide 3</section>
-				<section>Slide 2</section>
+				<section>
+					<section>
+						<h2>Refactor your health</h2>
+						<h4>An object oriented guide to a healthier life.</h4>
+						<p>Developed By:</p>
+						<p><span class="fragment"><a href="https://davewritescode.com">David Merk</a></span> and</p>
+						<p><span class="fragment"><a href="">Tony Thigpen</a></span></p>
+					</section>
+					<section>
+						<div id="left">
+							<img src="images/david1.jpg">
+						</div>
+						<div id="right">
+							<h3>David</h3>
+							<ul>
+								<li>Software Engineer <br/> at <b>QSR Automations</b></li>
+								<li>Hobbies:</li>
+								<ul>
+									<li class="fragment">Fitness</li>
+									<li class="fragment">Coding</li>
+									<li class="fragment">Startups</li>
+								</ul>
+								<li class="fragment"><span>Blog: <a href="https://davewritescode.com">davewritescode.com</a></span></li>
+							</ul>
+						</div>
+					</section>
+					<section>
+						<div id="left">
+								<img src="images/tony1.jpg">
+							</div>
+						<div id="right">
+							<h3>Tony</h3>
+							<ul>
+								<li>Software Engineer at {{Employeer}}}</li>
+								<li>Hobbies:</li>
+								<ul>
+									<li class="fragment">Fitness</li>
+									<li class="fragment">Coding</li>
+									<li class="fragment">Cosplay</li>
+								</ul>
+								<li class="fragment"><span>Blog: <a href="#">#</a></span></li>
+							</ul>
+						</div>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Nutrition</h2>
+					</section>
+					<section>
+						<h2>Exercise</h2>
+					</section>
+					<section>
+						<h2>Lifestyle</h2>
+					</section>
+					<section>
+						<h2>Technology</h2>
+					</section>
+				</section>
 			</div>
 		</div>
 
@@ -46,7 +124,8 @@
 					{ src: 'plugin/notes/notes.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true }
 				],
-				controlsLayout: 'edges',
+				controlsLayout: 'bottom-right',
+				hash: true,
 			});
 		</script>
 	</body>
