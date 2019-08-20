@@ -1,170 +1,367 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/solarized.css">
+	<title>reveal.js</title>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/solarized.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-		<style>
-			#left {
-				left:-8.33%;
-				text-align: left;
-				float: left;
-				width:40%;
-				margin-right:20px;
-				z-index:-10;
-			}
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
 
-			#right {
-				left:31.25%;
-				top: 75px;
-				float: right;
-				z-index:-10;
-				width:55%;
-			}
-			ul > li {
-				font-size:.8em;
-			}
-			ul > ul > li {
-				font-size:.6em;
-			}
-			.developed-by {
-				font-size:.6em;
-			}
-			.intro-slide h2 {
-				text-transform: initial;
-				font-size:1.8em;
-				color:white;
-				background-color:black;
-				display:inline-block;
-				padding: 0 10px;
-			}
-			.intro-slide h2.heading-two {
-				font-size:2.11em;
-				letter-spacing: 10px;
-			}
-		</style>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+	<style>
+		#left {
+			left: -8.33%;
+			text-align: left;
+			float: left;
+			width: 40%;
+			margin-right: 20px;
+			z-index: -10;
+		}
+
+		#right {
+			left: 31.25%;
+			top: 75px;
+			float: right;
+			z-index: -10;
+			width: 55%;
+		}
+
+		ul>li {
+			font-size: .8em;
+		}
+
+		ul>ul>li {
+			font-size: .6em;
+		}
+
+		.developed-by {
+			font-size: .6em;
+		}
+
+		.intro-slide h2 {
+			text-transform: initial;
+			font-size: 1.8em;
+			color: white;
+			background-color: black;
+			display: inline-block;
+			padding: 0 10px;
+		}
+
+		.intro-slide h2.heading-two {
+			font-size: 2.11em;
+			letter-spacing: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section id="title_slide">
 				<section>
-					<section>
-						<h2>Refactor your health</h2>
-						<h4>An object oriented guide to a healthier life.</h4>
-						<span class="developed-by"><p>Developed By:</p>
-						<p><a href="https://davewritescode.com">David Merk</a> and <a href="https://www.tonythigpen.com">Tony Thigpen</a></p></span>
-					</section>
-					<section>
-						<div id="left">
-							<img src="images/david1.jpg">
-						</div>
-						<div id="right">
-							<h3>David</h3>
+					<h2>Refactor your health</h2>
+					<h4>An object oriented guide to a healthier life.</h4>
+					<span class="developed-by">
+						<p>Developed By:</p>
+						<p><a href="https://davewritescode.com">David Merk</a> and <a
+								href="https://www.tonythigpen.com">Tony Thigpen</a></p>
+					</span>
+				</section>
+				<section>
+					<div id="left">
+						<img src="images/david1.jpg">
+					</div>
+					<div id="right">
+						<h3>David</h3>
+						<ul>
+							<li>Software Engineer <br /> at <b>QSR Automations</b></li>
+							<li>Hobbies:</li>
 							<ul>
-								<li>Software Engineer <br/> at <b>QSR Automations</b></li>
-								<li>Hobbies:</li>
-								<ul>
-									<li class="fragment">Fitness</li>
-									<li class="fragment">Coding</li>
-									<li class="fragment">Startups</li>
-								</ul>
-								<li class="fragment"><span>Blog: <a href="https://davewritescode.com">davewritescode.com</a></span></li>
+								<li class="fragment">Fitness</li>
+								<li class="fragment">Coding</li>
+								<li class="fragment">Startups</li>
 							</ul>
-						</div>
-					</section>
-					<section>
-						<div id="left">
-								<img src="images/tony1.jpg">
-							</div>
-						<div id="right">
-							<h3>Tony</h3>
+							<li class="fragment"><span>Blog: <a
+										href="https://davewritescode.com">davewritescode.com</a></span></li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<div id="left">
+						<img src="images/tony1.jpg">
+					</div>
+					<div id="right">
+						<h3>Tony</h3>
+						<ul>
+							<li>Software Engineer at <b>ALTOUR International</b></li>
+							<li>Founder of <b>Phantom Hex</b></li>
+							<li>Hobbies:</li>
 							<ul>
-								<li>Software Engineer at <b>ALTOUR International</b></li>
-								<li>Founder of <b>Phantom Hex</b></li>
-								<li>Hobbies:</li>
-								<ul>
-									<li class="fragment">Fitness</li>
-									<li class="fragment">Coding</li>
-									<li class="fragment">Writing</li>
-									<li class="fragment">Cosplay</li>
-								</ul>
-								<li class="fragment"><span>Blog: <a href="https://www.tonythigpen.com">TonyThigpen.com/blog</a></span></li>
+								<li class="fragment">Fitness</li>
+								<li class="fragment">Coding</li>
+								<li class="fragment">Writing</li>
+								<li class="fragment">Cosplay</li>
 							</ul>
-						</div>
-					</section>
+							<li class="fragment"><span>Site: <a
+										href="https://www.tonythigpen.com">TonyThigpen.com</a></span></li>
+						</ul>
+					</div>
 				</section>
-				<section data-background="images/neo.jpg" class="intro-slide">
-					<h2 class="heading-one">This presentation is</h2><br>
-					<h2 class="heading-two">the Hello World</h2><br>
-					<h2 class="heading-three">of your Health</h2>
-					<aside class="notes">
-						Any time I work out with anyone for the first time, I always like to tell them: "Start where you are, use what you've got, do what you can."
-					</aside>
+			</section>
+			<section data-background="images/neo.jpg" class="intro-slide">
+				<h2 class="heading-one">This presentation is</h2><br>
+				<h2 class="heading-two">the Hello World</h2><br>
+				<h2 class="heading-three">of your Health</h2>
+				<aside class="notes">
+					Any time I work out with anyone for the first time, I always like to tell them: "Start where you
+					are, use what you've got, do what you can."
+				</aside>
+			</section>
+			<section id="Pre-show">
+				<section>
+					<h2>Before We Start...</h2>
+				</section>
+			</section>
+			<section id="Nutrition">
+				<section>
+					<h2>Nutrition</h2>
+				</section>
+				<!-- Steps -->
+				<section>
+					<h3>It's 30% fitness, 70% nutrition.</h3>
+					<ul>
+						<li>
+							Change mostly comes from the kitchen.
+						</li>
+						<li>
+							The KITCHEN, not the BAG.
+						</li>
+						<li>
+							Really, it's all about moderation.
+						</li>
+					</ul>
+				</section>
+				<!-- Do's and Don't's -->
+				<section>
+					<h3>DO's and DON'Ts</h3>
+					<div id="left">
+						<h4>DO</h4>
+						<ul>
+							<li>Cook as much as possible</li>
+							<li>Count your macros along with calories</li>
+							<li>Whole foods (not the company)</li>
+							<li>Snacks!</li>
+							<ul>
+								<li>Nuts</li>
+								<li>Berries</li>
+								<li>Fruits</li>
+								<li>Hard Boiled Eggs</li>
+							</ul>
+							<li>When in doubt while you're out, sort it out</li>
+						</ul>
+					</div>
+					<div id="right">
+						<h4>DON'T</h4>
+						<ul>
+							<li>Carbonated drinks</li>
+							<li>Alcohol... I know what you're thinking.</li>
+							<li>Sauteed or Fried Foods</li>
+							<li>Fast Food</li>
+						</ul>
+					</div>
+				</section>
+				<!-- Casual recommendations -->
+				<section>
+					<h2 class="heading-one">Smart device appplications</h2>
+					<div id="left">
+						<h4>
+							For Calorie Counting
+						</h4>
+						<ul>
+							<li>Fooducate</li>
+							<li>MyFitnessPal</li>
+							<li>MyPlate</li>
+							<li>Lifesum</li>
+						</ul>
+					</div>
+					<div class="right">
+						<h4>
+							For Cooking
+						</h4>
+						<ul>
+							<li>Green Kitchen</li>
+							<li>Epicurious</li>
+							<li>Forks Over Knives</li>
+							<li>Oh She Grows</li>
+							<li>Fit Men Cook</li>
+						</ul>
+					</div>
+				</section>
+				<!-- Snacks and such -->
+				<section>
+					<h2>Other things</h2>
+					<ul>
+						<li>Snacks: Eggs, nuts, berries</li>
+						<li>Restrurants: Nah.</li>
+					</ul>
+				</section>
+			</section>
+			<section id="Exercise">
+				<section>
+					<h2>Exercise</h2>
+				</section>
+				<!-- Starting points -->
+				<section>
+					<h2>Where do I start?</h2>
+					<ul>
+						<li>Starting is one of the hardest things to do; but easily the best way to be ahead of everyone
+							else who has not.</li>
+						<li>Most folks search for a plan online</li>
+						<li>Most folks with money and time will get a gym membership</li>
+						<li>Most folks with more money and time hire a personal trainer</li>
+						<li>Many will make mistakes in the beginning</li>
+					</ul>
+				</section>
+				<!-- Audience participation -->
+				<section>
+					<h2>Audience Participation Time!</h2>
+				</section>
+				<!-- Recommendations -->
+				<section>
+					<h2>Recommendations</h2>
+					<ul>
+						<li class="fragment">Ask a friend in the know</li>
+						<li class="fragment">Hire a personal trainer AFTER doing your research</li>
+						<li class="fragment">Find a local boot camp</li>
+						<li class="fragment">Meetup!</li>
+					</ul>
+				</section>
+			</section>
+			<section id="Lifestyle">
+				<section>
+					<h2>Lifestyle</h2>
 				</section>
 				<section>
-					<section>
-						<h2>Nutrition</h2>
-					</section>
+					<h2>Sample demographics</h2>
+					<ul>
+						<li class="fragment">Most people in tech have an 8-to-5, or 8 hour, workday which is... well,
+							kinda
+							nice. <br>
+						</li>
+						<li class="fragment">Many would benefit from a 5-to-9 day (5 a.m. to 9 p.m.)</li>
+						<li class="fragment">Most humans get less than 6.1 hours of sleep</li>
+					</ul>
 				</section>
 				<section>
-					<section>
-						<h2>Exercise</h2>
-					</section>
+					<h2>Recommendations</h2>
+					<ul>
+						<li class="fragment">You don't have to go to a gym to be active</li>
+						<ul>
+							<li class="fragment">Walking/jogging/running outside is fine!</li>
+							<li class="fragment">A set of dumbbells and some floor space makes for an instant workout space</li>
+						</ul>
+						<li class="fragment">Have pets or children? They can participate too!</li>
+							<ul>
+								<li class="fragment">Children can join in on simple, non-resistance workouts</li>
+								<li class="fragment">Pets like to run around as it is</li>
+								<li class="fragment">Both will sleep well at night. Really.</li>
+							</ul>
+					</ul>
+				</section>
+			</section>
+			<section id="Technology">
+				<section>
+					<h2>Technology</h2>
 				</section>
 				<section>
-					<section>
-						<h2>Lifestyle</h2>
-					</section>
+					<h3>Smart devices are everywhere</h3>
+					<ul>
+						<li>Nearly 5 billion people have a smart device</li>
+						<li>Half of them are smartphones</li>
+						<li>167 million people are projected to have a wearable device by 2022</li>
+						<li>Everyone in this room has a smart phone, maybe a smart watch or tablet... or both</li>
+					</ul>
 				</section>
 				<section>
-					<section>
-						<h2>Technology</h2>
-					</section>
+					<h2>Fitness Tech</h2>
+					<ul>
+						<li class="fragment">Every major company out there has some kind of fitness tracking or digital
+							wellbeing application</li>
+						<ul>
+							<li class="fragment">Apple: HealthKit and Screen Time</li>
+							<li class="fragment">Google: Google Fit and Digital Wellbeing</li>
+							<li class="fragment">Under Armour: MapMyFitness and UA Record</li>
+							<li class="fragment">Microsoft: ...uh...</li>
+						</ul>
+					</ul>
 				</section>
 				<section>
-					<section>
-						<h2>Special Thanks to:</h2>
-					</section>
-					<section>
-						<h2>QSR Automations</h2>
-					</section>
+					<h2>Gamification</h2>
+					<ul>
+						<li class="fragment">Smartphone Apps</li>
+						<ul>
+							<li class="fragment"><b>Pokemon Go</b> managed to get 750+ million people to go outside and
+								walk with a pikachu and hatch their various "pokemon eggs".</li>
+							<li class="fragment"><b>Charity Miles</b> has given nearly $3 million from its userbase of
+								around 100K active users daily, many of them being runners</li>
+							<li class="fragment"><b>Zombies Run</b> and <b>Wizards Unite</b> are also some honorable
+								mentions</li>
+						</ul>
+						<li class="fragment">Arcades</li>
+						<ul>
+							<li class="fragment"><b>Dance Dance Revolution</b> is an arcade rhythm game with thousands
+								of
+								players around the world that uses foot-eye coordination for a fully active experience;
+								the
+								average 7-minute session burning 30-140 kcals.</li>
+						</ul>
+					</ul>
 				</section>
-			</div>
+			</section>
+			<!-- Special thanks -->
+			<section>
+				<section>
+					<h2>Special Thanks to:</h2>
+				</section>
+				<section>
+					<h2>QSR Automations</h2>
+					<h2>Code PaLOUsa</h2>
+				</section>
+			</section>
 		</div>
+	</div>
 
-		<script src="js/reveal.js"></script>
+	<script src="js/reveal.js"></script>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true }
-				],
-				controlsLayout: 'bottom-right',
-				hash: true,
-			});
-		</script>
-	</body>
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true }
+			],
+			controlsLayout: 'bottom-right',
+			hash: true,
+		});
+	</script>
+</body>
+
 </html>
